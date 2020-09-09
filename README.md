@@ -1,35 +1,44 @@
-# Basic-Graphical-Based-Password
-Helps to avoid shoulder surfing and keeping the account password secure by using a Color-Wheel to enter password.
+# Basic-Event-Manager-PHP
+Make a reservation for an event and subscribe to our newsletter.
 
 # Tecnologies 
-  * PHP-Laravel Framework
-  * Vue JS
+  * PHP
+  * PHP-Mailer
   * MySQL
-  * Adobe Illustrator (for making the color wheel)
-  * Regex
+  * AJAX
+  * JS/CSS Libraries
 
 # Interface
-On the first page (`127.0.0.1/`) are login/signup buttons. The user can login (after successful signup) by entering his password form the color wheel. 
+Admin and user have their own interfaces.
 
-### Signup
-When clicked on signup, the user is taken to a very basic signup form, there are 2 things that are important while signing-up 
-  * First, the user must enter a valid password, accepted passwords are in the range of `a-h (case sensitive)` and `1-8`.
-  * Second, the user must remember his password color from the drop-down in the signup-form, this color will be used later in the Color-Wheel to enter the user password.
-  
-### Login
-When clicked, will ask for user's email (to be verified by the system), if done successfully, a password-color-wheel will be displayed on the screen from which the user can enter his password. This is done by spining the wheel and pressing inner/outer value buttons, the values will be added in accordance to the password color user selected at the time of signup.
+### User
+* The is a one-page interface for user.
+* He can scroll to different positions in the page by using the nav bar.
+* There are `reservation, login/signup, newsletter forms` on the same page at different locations.
+* All of the forms validations are backed up by Ajax.
+* There is also a photo-gallery in the same page. 
+
+### Admin
+* Admin has many pages for its interface.
+* He can perform operations such as 
+  * `Add/block` a user.
+  * `Create/Send/Schedule` a newsletter and see the `sent` newsletter.
+  * `Add/Block` pics to/from gallery.
+  * He can `See/Accept/Complete` reservations made by different users.
+
 
 # Project Installation
  * Download the project and unzip. 
  * Next, the `code` folder must be placed into the `htdocs` folder.
  * Database (in `database` folder) must be imported into MySQL for the code to function properly, Database username and password are the default ones for Xampp.
- * To run the project, use command `php artisan serve` in the current directory with cmd and go to the server url, which will take you to the `home` page. The process after that is already explained above.
- * **Note:-** I have placed all the components pre-compiled in the code folder.
+ * To run the project, type `localhost[:PORT_NO]/path to (code/index.php)`. The process after that is already explained above.
+ 
+ * **Note:-** I have not added the mail scripts in this repo.
 
 # Project Demo
-A demo video is available on [https://youtu.be/1gb2ZOhl4eM]. Previews are also available on this repo in `Previews` Folder
+A demo video is available on [https://youtu.be/zb-IJgGcA5I]. Previews are also available on this repo in `Previews` Folder
 
 # More Info
-The project was created 10 months before today(2/9/2020) on Laravel-6.0 version.
+The project was created 11 months before today(9/9/2020) on PHP-7.0 version.
 
-The main aim of this project was for me to understand ***regex*** and ***using graphics for security*** in a web application. This was my seventh project on web-development.
+The main aim of this project was for me to understand ***PHP-Mailer*** and ***AJAX*** in a web application. This was my semester project on web-development course.
